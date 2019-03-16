@@ -8,5 +8,5 @@ Private Repository for HW assignments of Stat 133 (Spring 2019)
 - Lab section: 101
 - GSI: Colin Kou
 
-In this project, I will analyze the shot data of five key players of the Golden State Warriors from 2016, creating visuals and other summaries to determine what most effectively boosts their numbers.
+Analyzing the shot data of five key players of the Golden State Warriors from 2016, creating visuals and other summaries to determine what most effectively boosts their numbers.
 
