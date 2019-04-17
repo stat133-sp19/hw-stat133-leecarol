@@ -1,4 +1,9 @@
-# hw-stat133-leecarol
-hw-stat133-leecarol created by GitHub Classroom
+# Stat 133, Spring 2019
 
-Repository for Stat 133 Homework
+Private Repository for HW assignments of Stat 133 (Spring 2019)
+
+- Name: Carol Lee
+- Github username: leecarol
+- Email: carollee@berkeley.edu
+- Lab section: 101
+- GSI: Colin Kou
