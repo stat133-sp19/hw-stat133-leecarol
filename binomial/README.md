@@ -2,7 +2,7 @@
 
 "binomial" is an R package that provides functions to calculate values of a binomial random variable.
 
-- bin_choose() computes the number of combinations in which k successes can occur in n trials
+- `bin_choose()` computes the number of combinations in which k successes can occur in n trials
 - bin_probability() computes the probability of getting a certain amount of successes in a number of trials with probability prob
 - bin_distribution() creates a data frame with the probability distribution: successes in the first column, probability in the second column
 - plot() method to create a barplot of a "binvar" object created by bin_distribution()
