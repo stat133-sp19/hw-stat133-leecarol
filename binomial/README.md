@@ -11,7 +11,7 @@
 ## Motivation
 
 This package has been developed as part of a class project to learn and improve skill at the creation of an R project.
-The binomial distribution is an important, commonly used distribution. This package allows the user to quickly and efficiently calculate vales of a binomial random variable.
+The binomial distribution is an important, commonly used distribution. This package allows the user to quickly and efficiently calculate values of a binomial random variable.
 
 ## Installation
 
@@ -22,10 +22,10 @@ Install the development version from GitHub via the package "devtools":
 #install.packages("devtools") 
 
 # install "binomial" (without vignettes)
-devtools::install_github("leecarol/binomial")
+devtools::install_github("stat133-sp19/hw-stat133-leecarol/binomial")
 
 # install "binomial" (with vignettes)
-devtools::install_github("leecarol/binomial", build_vignettes = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-leecarol/binomial", build_vignettes = TRUE)
 ```
 
 ## Usage
@@ -33,22 +33,31 @@ devtools::install_github("leecarol/binomial", build_vignettes = TRUE)
 
 ```{r}
 library(binomial)
+
 # Number of combinations of 2 out of 5
 bin_choose(n = 5, k = 2)
+
 # Calculate probability
 bin_probability(success = 2, trials = 5, prob = 0.5)
+
 # Calculate probability distribution
 bin_distribution(trials = 5, prob = 0.5)
+
 # Plot the distribution
 plot(bin_distribution(trials = 5, prob = 0.5))
+
 # Calculate cumulative probability distribution
 bin_cumulative(trials = 5, prob = 0.5)
+
 # Plot the cumulative distribution
 plot(bin_cumulative(trials = 5, prob = 0.5))
+
 # Create a binomial variable object
 bin_variable(trials = 5, prob = 0.5)
+
 # Get full summary description of a binomial variable
 summary(bin_variable(trials = 5, prob = 0.5))
+
 # Calculate values
 bin_mean(5, 0.5)
 bin_variance(5, 0.5)
