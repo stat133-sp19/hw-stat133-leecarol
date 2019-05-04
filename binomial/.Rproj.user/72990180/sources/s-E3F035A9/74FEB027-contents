@@ -1,0 +1,20 @@
+Package: binomial
+Type: Package
+Title: Binomial Distribution
+Version: 0.1.0
+Authors@R: person("Carol", "Lee", email = "carollee@berkeley.edu", role = c("aut", "cre")) 
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Provides functions to calculate probabilities of a Binomial random variable
+    and other related values, including probability distribution, mean, variance, mode,
+    skewness, and kurtosis. It also provides methods of plotting distributions and printing
+    summaries of values.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat,
+    ggplot2,
+    knitr,
+    rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr

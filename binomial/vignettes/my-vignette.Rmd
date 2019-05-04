@@ -1,0 +1,103 @@
+---
+title: "Getting Started with binomial"
+author: "Carol Lee"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(binomial)
+```
+
+## Binomial Distribution
+
+The binomial distribution is a widely-used probability distribution for discrete random variables. This model is used to calculate probablities about the number of successes in a fixed number of trials performed under an assumption of a constant probability of success on each trial. This package "binomial" contains functions to calculate values of a random binomial variable.
+
+## Calculating n choose k
+
+To calculate the probablity of the number of successes in a fixed number of trials, one value needed is the number of combinations in which k successes can occur in n trials. Use the 'bin_choose()' function to calculate this:
+
+```{r}
+bin_choose(n = 5, k = 2)
+```
+
+## Calculating probability with bin_probability()
+
+To calculate the probability of a certain number of successes in a fixed number of trials with a fixed probability of success in each trial, use 'bin_probability()'. For example, if you were to flip a fair coin 5 times and wanted to calculate the probability of getting exactly 2 heads in those 5 flips, you would use:
+
+```{r}
+bin_probability(success = 2, trials = 5, prob = 0.5)
+```
+
+## Calculating the probability distribution
+
+You can use the 'bin_probability()' function to create a data frame that shows the probability distribution, which is how probability is distributed across all possible values of success. Let's say we are examining the case of flipping a fair coin 5 times. What is the probability distribution of such an event?
+
+```{r}
+bin_distribution(trials = 5, prob = 0.5)
+```
+
+The above code creates an object of class "bindis". You can use the 'plot()' function to display the information in a barplot to better visualize the data.
+
+```{r}
+dis <- bin_distribution(trials = 5, prob = 0.5)
+plot(dis)
+```
+
+## Finding the binomial cumulative distribution
+
+You can use 'bin_cumulative()' if you want to calculate the cumulative distribution. The resulting output will show a data frame with three columns, and the cumulative probability value of each row is the sum of the probability of that value of success and the previous probabilities. With the same coin tossing example, we can find the cumulative distribution too:
+
+```{r}
+bin_cumulative(trials = 5, prob = 0.5)
+```
+
+To graph this information into a visual, use plot().
+
+```{r}
+cum_dis <- bin_cumulative(trials = 5, prob = 0.5)
+plot(cum_dis)
+```
+
+## Creating a 'binvar' object
+
+To explore the values of a binomial variable, you first need to create an object of class "binvar", or a binomial random variable object.
+
+```{r}
+bin_variable(trials = 5, prob = 0.5)
+```
+
+In the above code, a binvar object is created with 5 trials and 0.5 probability of success on each trial. This object is a list with the elements trials and prob. Upon being invoked, this function will print the values as shown.
+
+## Getting full summary description of the binomial variable
+
+Use the 'summary()' function to get a full summary description of a binomial random variable, including the number of trials, probability of success, mean or expected value, variance, mode, skewness, and kurtosis:
+
+```{r}
+bin <- bin_variable(trials = 5, prob = 0.5)
+summary(bin)
+```
+
+## Calculating individual measures
+
+If you want to calculate the individual values of a binomial random variable, such as mean or variance, use the functions of measures:
+
+```{r}
+bin_mean(5, 0.5)
+bin_variance(5, 0.5)
+bin_mode(5, 0.5)
+bin_skewness(5, 0.5)
+bin_kurtosis(5, 0.5)
+```
+
+

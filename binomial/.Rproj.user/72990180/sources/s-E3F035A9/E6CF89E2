@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556928577701.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E6CF89E2",
+    "lastKnownWriteTime" : 1556948155,
+    "last_content_update" : 1556948156838,
+    "path" : "~/binomial/vignettes/my-vignette.Rmd",
+    "project_path" : "vignettes/my-vignette.Rmd",
+    "properties" : {
+        "cursorPosition" : "64,24",
+        "scrollLine" : "59"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
