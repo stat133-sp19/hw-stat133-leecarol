@@ -1,15 +1,19 @@
 ## Overview
 
 "binomial" is an R package that provides functions to calculate values of a binomial random variable.
-- ```{r} 
-bin_choose()
-```
-computes the number of combinations in which k successes can occur in n trials
+
+- bin_choose() computes the number of combinations in which k successes can occur in n trials
 - bin_probability() computes the probability of getting a certain amount of successes in a number of trials with probability prob
 - bin_distribution() creates a data frame with the probability distribution: successes in the first column, probability in the second column
-- bin_cumulative() creates a data frame with the probability distribution: 
-          successes in the first column, probability in the second column, cumulative probability in the third column
+- plot() method to create a barplot of a "binvar" object created by bin_distribution()
+- bin_cumulative() creates a data frame with the probability distribution: successes in the first column, probability in the second column, cumulative probability in the third column
+- plot() method to display a "bincum" object created by bin_cumulative()
 - bin_variable() creates an object of class "binvar", which can be passed to other functions to calculate values
+- bin_mean() to calculate mean
+- bin_variance() to calculate variance
+- bin_mode() to calculate mode
+- bin_skewness() to calculate skewness
+- bin_kurtosis() to calculate kurtosis
 
 ## Motivation
 
