@@ -9,12 +9,12 @@
 - bin_variable() creates an object of class "binvar", which can be passed to other functions to calculate values
 
 ## Motivation
-----------
+
 This package has been developed as part of a class project to learn and improve skill at the creation of an R project.
 THe binomial distribution is an important, commonly used distribution. This package allows the user to quickly and efficiently calculate vales of a binomial random variable.
 
 ## Installation
-----------
+
 Install the development version from GitHub via the package "devtools":
 
 ```{r}
@@ -29,7 +29,7 @@ devtools::install_github("leecarol/binomial", build_vignettes = TRUE)
 ```
 
 ## Usage
-----------
+
 
 ```{r}
 library(binomial)
